@@ -15,9 +15,8 @@ app.listen(PORT,function(){
 
 });
 
-console.log(PORT)
-
 var savedNotes = JSON.parse(fs.readFileSync(__dirname+'/db/db.json'));
+console.log(savedNotes)
 
 app.get("/", function(req, res) {
     console.log(__dirname)
